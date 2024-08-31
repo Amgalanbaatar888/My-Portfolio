@@ -178,8 +178,8 @@ export default function Home() {
           View
         </motion.div>
         <Rounded>
-          <p>More Work</p>
-        </Rounded>{" "}
+          <p>Skills</p>
+        </Rounded>
       </>
     </main>
   );

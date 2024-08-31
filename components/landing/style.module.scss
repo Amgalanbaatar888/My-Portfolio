@@ -25,6 +25,9 @@
     font-size: 230px;
     font-weight: 500;
     padding-right: 50px;
+    @media (max-width: 768px) {
+      font-size: 100px;
+    }
   }
 
   .slider p:nth-of-type(2) {

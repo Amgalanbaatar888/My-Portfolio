@@ -88,40 +88,42 @@ export default function Index() {
             </p>
           </div>
         </div>
-        <div className={styles.nav}>
-          <Magnetic>
-            <div
-              style={{ color: "white", fontWeight: "bold" }}
-              className={styles.el}
-            >
-              <a href="#work" onClick={handleSmoothScroll}>
-                Work
-              </a>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div
-              style={{ color: "white", fontWeight: "bold" }}
-              className={styles.el}
-            >
-              <a href="#about" onClick={handleSmoothScroll}>
-                About
-              </a>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div
-              style={{ color: "white", fontWeight: "bold" }}
-              className={styles.el}
-            >
-              <a href="#contact" onClick={handleSmoothScroll}>
-                Contact
-              </a>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
+        <div className="max-sm:hidden">
+          <div className={styles.nav}>
+            <Magnetic>
+              <div
+                style={{ color: "white", fontWeight: "bold" }}
+                className={styles.el}
+              >
+                <a href="#work" onClick={handleSmoothScroll}>
+                  Work
+                </a>
+                <div className={styles.indicator}></div>
+              </div>
+            </Magnetic>
+            <Magnetic>
+              <div
+                style={{ color: "white", fontWeight: "bold" }}
+                className={styles.el}
+              >
+                <a href="#about" onClick={handleSmoothScroll}>
+                  About
+                </a>
+                <div className={styles.indicator}></div>
+              </div>
+            </Magnetic>
+            <Magnetic>
+              <div
+                style={{ color: "white", fontWeight: "bold" }}
+                className={styles.el}
+              >
+                <a href="#contact" onClick={handleSmoothScroll}>
+                  Contact
+                </a>
+                <div className={styles.indicator}></div>
+              </div>
+            </Magnetic>
+          </div>
         </div>
       </div>
       <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>

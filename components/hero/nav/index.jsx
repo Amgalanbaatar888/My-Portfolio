@@ -44,7 +44,7 @@ export default function index() {
   }, []);
 
   return (
-    <>
+    <div>
       <div ref={header} className={styles.header}>
         <div className={styles.logo}>
           <p className={styles.copyright}>©</p>
@@ -90,6 +90,6 @@ export default function index() {
         </Rounded>
       </div>
       <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
-    </>
+    </div>
   );
 }

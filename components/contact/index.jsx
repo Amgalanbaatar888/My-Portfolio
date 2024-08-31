@@ -22,9 +22,12 @@ export default function index() {
             <div className={styles.imageContainer}>
               <Image fill={true} alt={"image"} src={`/images/hacker.jpeg`} />
             </div>
-            <h2>Let's work</h2>
+            <div className="flex gap-1 font-mono">
+              <h2>Let's work</h2>
+              <h2 className="sm:hidden">together</h2>
+            </div>
           </span>
-          <h2>together</h2>
+          <h2 className="max-sm:hidden">together</h2>
           <motion.div style={{ x }} className={styles.buttonContainer}>
             <Rounded backgroundColor={"#334BD3"} className={styles.button}>
               <p>Get in touch</p>
@@ -55,8 +58,8 @@ export default function index() {
         <div className={styles.info}>
           <div>
             <span>
-              <h3>Version</h3>
-              <p>2024 © Edition</p>
+              <h3 className="max-sm:hidden">Version</h3>
+              <p className="max-sm:hidden">2024 © Edition</p>
             </span>
           </div>
           <div>
