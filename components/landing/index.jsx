@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "./style.module.scss";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";

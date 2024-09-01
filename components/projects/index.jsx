@@ -26,10 +26,10 @@ const projects = [
     route: "https://blackonefurniture.vercel.app/",
   },
   {
-    title: "NetFlix-clone",
-    src: "netflix.png",
-    color: "#FF0000",
-    route: "https://www.instagram.com/yesoke_snw/",
+    title: "Apple-clone",
+    src: "iphone15.png",
+    color: "#8F8A81",
+    route: "https://apple-clone-bb.vercel.app/",
   },
 ];
 
@@ -178,7 +178,7 @@ export default function Home() {
           View
         </motion.div>
         <Rounded>
-          <p>Skills</p>
+          <p>Featured Work</p>
         </Rounded>
       </>
     </main>

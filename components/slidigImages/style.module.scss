@@ -6,6 +6,10 @@
   margin-top: 200px;
   background-color: white;
   z-index: 1;
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    gap: 2vw;
+  }
   .slider {
     display: flex;
     position: relative;
@@ -29,9 +33,12 @@
     }
   }
   .circleContainer {
-    background-color: red;
+    background-color: white;
     position: relative;
     margin-top: 100px;
+    @media (max-width: 768px) {
+      margin-top: 290px;
+    }
     .circle {
       height: 1550%;
       width: 120%;
@@ -41,6 +48,11 @@
       z-index: 1;
       position: absolute;
       box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+      @media (max-width: 768px) {
+        height: 155%;
+        width: 100%;
+        left: 0;
+      }
     }
   }
 }

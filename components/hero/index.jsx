@@ -44,19 +44,6 @@ export default function Index() {
     });
   }, []);
 
-  const handleSmoothScroll = (event) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      gsap.to(window, {
-        scrollTo: targetElement,
-        duration: 1,
-        ease: "power1.out",
-      });
-    }
-  };
-
   return (
     <>
       <div ref={header} className={styles.header}>
@@ -95,9 +82,7 @@ export default function Index() {
                 style={{ color: "white", fontWeight: "bold" }}
                 className={styles.el}
               >
-                <a href="#work" onClick={handleSmoothScroll}>
-                  Work
-                </a>
+                <a href="https://www.instagram.com/yesoke_snw/">Instagram</a>
                 <div className={styles.indicator}></div>
               </div>
             </Magnetic>
@@ -106,9 +91,7 @@ export default function Index() {
                 style={{ color: "white", fontWeight: "bold" }}
                 className={styles.el}
               >
-                <a href="#about" onClick={handleSmoothScroll}>
-                  About
-                </a>
+                <a href="https://github.com/Amgalanbaatar888">GitHub</a>
                 <div className={styles.indicator}></div>
               </div>
             </Magnetic>
@@ -117,9 +100,7 @@ export default function Index() {
                 style={{ color: "white", fontWeight: "bold" }}
                 className={styles.el}
               >
-                <a href="#contact" onClick={handleSmoothScroll}>
-                  Contact
-                </a>
+                <a href="https://imgur.com/a/mczur6w">CV</a>
                 <div className={styles.indicator}></div>
               </div>
             </Magnetic>

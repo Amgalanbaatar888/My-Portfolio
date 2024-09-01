@@ -39,7 +39,9 @@ export default function index() {
           </motion.p>
           <div className="max-sm:hidden" data-scroll data-scroll-speed={0.1}>
             <Rounded className={styles.button}>
-              <p>About me</p>
+              <a href="https://imgur.com/a/mczur6w">
+                <p>Resume</p>
+              </a>
             </Rounded>
           </div>
         </div>
