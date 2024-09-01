@@ -2,10 +2,10 @@
 import styles from "./page.module.scss";
 import { useEffect } from "react";
 import Landing from "../components/landing/index";
-import Projects from "../components/Projects/index";
-import Description from "../components/Description/index";
+import Projects from "../components/projects/Projects";
+import Description from "../components/description/Description";
 import SlidingImages from "../components/slidigImages/index";
-import Contact from "../components/Contact/index";
+import Contact from "../components/contact/Contact";
 
 export default function Home() {
   useEffect(() => {
